@@ -1,0 +1,423 @@
+body {
+    font-family:sans-serif;
+    background-image: url("images/background.jpg");
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color:whitesmoke;
+    font-weight: bold;
+    line-height: 1.5;
+}
+/*navigation bar*/
+#navigation {
+
+    width: 100%;
+    
+}
+.navbar-brand{
+    font-family:"ubuntu" ;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 3%;
+}
+
+.nav-item {
+    float:right;
+}
+.nav-link {
+    font-size:1.2rem;
+    font-family: "montserrat-light";
+}
+.form-inline {
+    margin: 2rem;
+}
+
+#dropdownbtn2 {
+    text-align: center;
+    background-color: rgb(211, 211, 207);
+}
+#loginbtn {
+    margin:5% 2% 5% 2%;
+}
+.searchbtn {
+    padding: 5%;
+}
+
+/*Menu*/
+#menu {
+    background-color:black;
+    width: 100%;
+    z-index:1;
+    
+} 
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    border:none;
+    padding: 10%;
+    margin: 0;
+  }
+  
+  .dropdwnbtn {
+    position: relative;
+    display: inline-block;
+    margin:0 2% 0 2.5%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width:600%;
+    background-color: #f1f1f1;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+  }
+  .drpcont2 {
+      width: 200%;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 5% 5% 5% 5% ;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdwnbtn:hover .dropdown-content {display: block;}
+  
+  .dropdwnbtn:hover .dropbtn {background-color: black;color: white;}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10%;
+    background-color: rgb(255, 255, 255);
+    height: 250%;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 16%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .column a:hover {
+    background-color: #ddd;
+    
+  }
+ .megmen {
+     text-decoration: solid;
+     z-index:1;
+ }
+ .megmen:hover {
+     background-color: #ddd;
+ }
+
+/*Banner*/
+.banner { 
+    text-align: center;
+}
+#myVideo {
+    position: absolute;
+    right: 0 ;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+.head1 {
+    text-align: center;
+    font-size: 3.6rem;
+}
+.download-button {
+    text-align: center;
+    margin-bottom: 5%;
+    
+}
+/*gaming deals section*/
+.card button {
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    padding:5%;
+    font-size: 18px;
+  }
+
+
+
+/* genre section*/
+.genre {
+    margin-bottom: 7%;
+}
+.row1 {
+    margin:0 2.5% 0 2.5%;
+    
+}
+.row2 {
+    margin: 0 2.5% 0 2.5%;
+}
+  /* Float four columns side by side */
+  .col1 {
+    float: left;
+    width: 25%;
+    padding: 2%;
+    margin: 5% 0 0 0;
+    background-color: #000000;
+  }
+
+
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .col1 {
+      width: 100%;
+      display: block;
+      margin: 5%;
+    }
+  }
+  
+  /* Style the counter cards */
+  .crd1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+.crd1:hover {
+    box-shadow: 0 8px 16px 0 #ffffff;
+  }
+  .images1 {
+      width: 100%;
+      height: 90%;
+  }
+ .browse {
+     margin: 7% 0 0 3%;
+ } 
+ .browse1 {
+     margin: 2% 0 0 3%;
+     color: white;
+ }
+
+/*testimonial section*/
+.test1 {
+    margin:0 0 0 4%;
+    color: whitesmoke;
+}
+#testimonials {
+    
+    text-align: center;
+    background-color: #272626;
+    font-family: "ubuntu";
+    margin: 1% 4% 0 4%;
+}
+.test3 {
+    padding: 4%;
+    color: whitesmoke;
+    
+}
+.test2 {
+    margin-right:1%;
+}
+
+td {
+    padding-left: 7%;
+    padding-right: 4%;
+}
+
+/*cta*/
+#cta {
+    background-color: #272626;
+    padding: 4% 15%;
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 7% 0 15% 0;
+    
+}
+#loginbtn1 {
+     padding:1% 4% 1% 4%;
+     margin: 2%;
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+/*footer*/
+
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-dis{
+	background-image: url("images/background.jpg");
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-dis .footer-left,
+.footer-dis .footer-center,
+.footer-dis .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-dis .footer-left{
+	width: 30%;
+}
+
+.footer-dis h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+
+.footer-dis h3 span{
+	color:  #1dd3bd;
+}
+
+/* Footer links */
+
+.footer-dis .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-dis .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-dis .footer-copyright{
+	color:  #ced2d6;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-dis .footer-center{
+	width: 35%;
+}
+
+
+.footer-dis .footer-center i{
+	background-image: url("images/background.jpg");
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+
+.footer-dis .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-dis .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-dis .footer-center p a{
+	color:  #1dd3bd;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-dis .footer-right{
+	width: 30%;
+}
+
+.footer-dis .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-dis .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-dis .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-dis .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-image: url("images/background.jpg");
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+@media (max-width: 880px) {
+
+	.footer-dis .footer-left,
+	.footer-dis .footer-center,
+	.footer-dis .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-dis .footer-center i{
+		margin-left: 0;
+	}
+
+}
