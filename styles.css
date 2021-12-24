@@ -17,13 +17,6 @@ h1 {
     width: 100%;
     
 }
-.navbar-brand{
-    font-family:"ubuntu" ;
-    font-weight: bold;
-    font-size: 2rem;
-    margin-left: 3%;
-}
-
 .nav-item {
     float:right;
 }
@@ -508,7 +501,6 @@ input[type="password"]
     box-sizing: border-box;
     margin-bottom: 20px;
     padding: 4px;
-    width: 220px;
     height: 32px;
     border: none;
     outline: none;

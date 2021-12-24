@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['username'])){
+  header('location:signin.php');
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -23,11 +31,17 @@
 </head>
 
 <body>
+  <?php
+            if(isset($_GET['message2'])) {
+              $message = $_GET['message2'];
+              echo $message;
+                        }
+                      ?>
   <!--navbar-->
  <section id= "navigation">
  <div class="headervideo">
   <nav class="navbar navbar-expand-lg navbar-dark ">
-    <a class="navbar-brand" href="index.html">GameMart</a>
+  <img class="navbar-brand logo" src="images/logocolour2.png" alt="action">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -65,7 +79,7 @@
       <div class="modal-footer">
         <button class="clear-cart btn btn-danger">Clear Cart</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Order now</button>
+        <a href="payment.html" class="btn btn-primary">Order Now</a>
       </div>
     </div>
   </div>
@@ -82,7 +96,7 @@
         <li>
           <div class="dropdown">
             <a class="nav-link  dropdown-toggle" href="#" id="dropdownMenu2" role="button" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
-              Login
+            Signin
             </a>
             <div id="dropdownbtn2" class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <a href="www.facebook.com" id="loginbtn" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
@@ -164,66 +178,79 @@
   
     <div class="col-lg-3 col-sm-6 col1">
       <div class="card crd1">
-        <img class="images1 card-img-top" src="images/mortal kombat 11.jpg" alt="adventure">
-        <h3>Mortal kombat 11</h3>
-        <p class="price">$19.99</p>
-        <p><a href="#" data-price="19.99"><button  class="add-to-cart ">Add to Cart</button></p></a>
+        <img class="images1 card-img-top" src="images/rainbow six seige.png" alt="action">
+        <div class="card-block">
+        <h3 class="card-title">Rainbow six seige</h3>
+        <p class="price card-text">$19.99</p>
+        <p><a href="#" data-name="Rainbow six seige" data-price="19.99" class="add-to-cart "><button>Add to Cart</button></p></a>
       </div>
+    </div>
     </div>
     
     <div class="col-lg-3 col-sm-6 col1">
       <div class="card crd1">
-        <img class="images1 card-img-top" src="images/rainbow six seige.png" alt="arcade">
-        <h3>Rainbow six seige</h3>
-        <p class="price">$19.99</p>
-        <p><a href="#" data-price="19.99"><button  class="add-to-cart ">Add to Cart</button></p></a>
+        <img class="images1 card-img-top" src="images/fallguys.jpg" alt="action">
+        <div class="card-block">
+        <h3 class="card-title">Fall Guys</h3>
+        <p class="price card-text">$19.99</p>
+        <p><a href="#" data-name="Fall Guys" data-price="19.99" class="add-to-cart "><button>Add to Cart</button></p></a>
       </div>
+    </div>
     </div>
     
     <div class="col-lg-3 col-sm-6 col1">
       <div class="card crd1">
-        <img class="images1 card-img-top" src="images/fallguys.jpg" alt="shooting">
-        <h3>Fall guys</h3>
-        <p class="price">$19.99</p>
-        <p><a href="#" data-price="19.99"><button  class="add-to-cart ">Add to Cart</button></p></a>
+        <img class="images1 card-img-top" src="images/Dota 2.jpg" alt="action">
+        <div class="card-block">
+        <h3 class="card-title">Dota 2</h3>
+        <p class="price card-text">$19.99</p>
+        <p><a href="#" data-name="Dota 2" data-price="19.99" class="add-to-cart "><button>Add to Cart</button></p></a>
       </div>
+    </div>
     </div>
   </div>
-  <div class="row row2">
-    <div class="col-lg-3 col-sm-6 col1">
+  <div class="col-lg-3 col-sm-6 col1">
       <div class="card crd1">
-        <img class="images1 card-img-top" src="images/Dota 2.jpg" alt="simulation">
-        <h3>Dota 2</h3>
-        <p class="price">$19.99</p>
-        <p><a href="#" data-price="19.99"><button  class="add-to-cart ">Add to Cart</button></p></a>
+        <img class="images1 card-img-top" src="images/Microsoft Flight Simulator.jpg" alt="action">
+        <div class="card-block">
+        <h3 class="card-title">Flight Simulator</h3>
+        <p class="price card-text">$19.99</p>
+        <p><a href="#" data-name="Flight Simulator" data-price="19.99" class="add-to-cart "><button>Add to Cart</button></p></a>
       </div>
+    </div>
     </div>
   
     <div class="col-lg-3 col-sm-6 col1">
       <div class="card crd1">
-        <img class="images1 card-img-top" src="images/Microsoft Flight Simulator.jpg" alt="racing">
-        <h3>Flight Simulator</h3>
-        <p class="price">$19.99</p>
-        <p><a href="#" data-price="19.99"><button  class="add-to-cart ">Add to Cart</button></p></a>
+        <img class="images1 card-img-top" src="images/battlefield 5.jpg" alt="action">
+        <div class="card-block">
+        <h3 class="card-title">Battlefield 5</h3>
+        <p class="price card-text">$19.99</p>
+        <p><a href="#" data-name="Battlefield 5" data-price="19.99" class="add-to-cart "><button>Add to Cart</button></p></a>
       </div>
+    </div>
     </div>
     
     <div class="col-lg-3 col-sm-6 col1">
       <div class="card crd1">
-        <img class="images1 card-img-top" src="images/battlefield 5.jpg" alt="horror">
-        <h3>Battlefield 5</h3>
-        <p class="price">$19.99</p>
-        <p><a href="#" data-price="19.99"><button  class="add-to-cart ">Add to Cart</button></p></a>
+        <img class="images1 card-img-top" src="images/pubg.jpg" alt="action">
+        <div class="card-block">
+        <h3 class="card-title">PUBG</h3>
+        <p class="price card-text">$19.99</p>
+        <p><a href="#" data-name="PUBG" data-price="19.99" class="add-to-cart "><button>Add to Cart</button></p></a>
       </div>
+    </div>
     </div>
     
     <div class="col-lg-3 col-sm-6 col1">
       <div class="card crd1">
-        <img class="images1 card-img-top" src="images/pubg.jpg" alt="puzzle">
-        <h3>PUBG</h3>
-        <p class="price">$19.99</p>
-        <p><a href="#" data-price="19.99"><button class="add-to-cart ">Add to Cart</button></p></a>
+        <img class="images1 card-img-top" src="images/mortal kombat 11.jpg" alt="action">
+        <div class="card-block">
+        <h3 class="card-title">Mortal Kombat 11</h3>
+        <p class="price card-text">$19.99</p>
+        <p><a href="#" data-name="Mortal Kombat 11" data-price="19.99" class="add-to-cart "><button>Add to Cart</button></p></a>
       </div>
+    </div>
     </div>
   </div>
 </section>    
@@ -397,8 +424,11 @@
       </div>
     </div>
   </footer>
-  <script  src="cart.js"></script>
+  <script  src="index.js"></script>
 </body>
 </html>
+ 
+
+
  
 
